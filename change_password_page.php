@@ -44,6 +44,9 @@ $changepassword ->changepassword();
                   <button type="submit" name="change"class="btn btn-primary">
                   Change
                   </button>
+                  <a href="home_page.php">
+                  Back
+                </a>
                 </a>
               </div>
            </div>
