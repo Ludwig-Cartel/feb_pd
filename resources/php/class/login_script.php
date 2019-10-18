@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/oct_pd/resources/php/db/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/feb_pd/resources/php/db/config.php';
 class login_script extends config{
  public function __construct($username=null,$password=null){
    $this->username = $username;
@@ -22,7 +22,7 @@ class login_script extends config{
              }
              if ($password == $passWord && $username == $userName) {
                $_SESSION['username'] = $username;
-               header('location: homepage.php');
+               header('location: home_page.php');
              }
    }
  }

@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/oct_pd/resource/php/class/login_script.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/feb_pd/resources/php/class/login_script.php';
 session_start();
 if (isset($_POST['login'])) {
 $login = new login_script($_POST['username'],$_POST['password']);
