@@ -19,7 +19,6 @@ class change_password_script extends config{
         foreach ($rows as $row) {
           $password =  $row->password;
           }
-          var_dump($confirmpass);
           if ($confirmpass == $password) {
             $newpass = $this->newpass;
             if ($confirmpass != $newpass) {

@@ -42,7 +42,7 @@ $changepassword ->changepassword();
               <div class="col-md-6 offset-md-5">
                 <a href="index.php">
                   <button type="submit" name="change"class="btn btn-primary">
-                  Register
+                  Change
                   </button>
                 </a>
               </div>
