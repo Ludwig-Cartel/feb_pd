@@ -25,7 +25,7 @@ $changepassword ->changepassword();
         	<input type="hidden" name="_token" value="DckCorowTc7XSm9rN42jc9hwR0cFbFewUPxAjOah">
 
             <div class="form-group row">
-             <label for="password" class="col-md-4 col-form-label text-md-right">Confirm Password</label>
+             <label for="password" class="col-md-4 col-form-label text-md-right">Old Password</label>
               <div class="col-md-7">
                 <input id="password" type="password" class="form-control " name="confirmpass" required autocomplete="new-password">
               </div>

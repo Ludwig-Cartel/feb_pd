@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/feb_pd/resources/php/class/logout.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/feb_pd/resources/php/class/logout_script.php';
 if (isset($_POST['logout'])) {
 $logout = new logout();
 $logout -> logouts();
@@ -27,7 +27,6 @@ $logout -> logouts();
                 </div>
                 <div class="links">
                   <a href="change_password_page.php">Change Password</a>
-                  <a href="">LogOut</a>
                   <form action="" method="post">
                   <input type="submit" name="logout" value="logout">
                 </form>
