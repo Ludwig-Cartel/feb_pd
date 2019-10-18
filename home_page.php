@@ -20,7 +20,7 @@ $logout -> logouts();
             <div class="content">
                 <div class="title m-b-md">
                     Welcome <?php session_start();
-                  $uname = $_SESSION['username'];
+                  $uname = $_SESSION['email'];
                     if(isset($uname)){echo $uname;}else{
                         header('location: index.php');
                     } ?>
