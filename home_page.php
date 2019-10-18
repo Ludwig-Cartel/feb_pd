@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/feb_pd/resources/php/class/logout.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/feb_pd/resources/php/class/logout_script.php';
 if (isset($_POST['logout'])) {
 $logout = new logout();
 $logout -> logouts();
