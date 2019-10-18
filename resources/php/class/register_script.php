@@ -17,7 +17,7 @@ public function register(){
     $username = $this->username;
     $password = $this->password;
     $email = $this->email;
-    $sql = "INSERT INTO `feb_db`(`username`, `password`, `email`) VALUES (?,?,?)";
+    $sql = "INSERT INTO `feb_pd`(`username`, `password`, `email`) VALUES (?,?,?)";
     $data = $con->prepare($sql);
     $data->execute([$username,$password,$email]);
 
