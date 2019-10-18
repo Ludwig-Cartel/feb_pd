@@ -19,9 +19,10 @@ class login_script extends config{
            foreach ($rows as $row) {
              $passWord =  $row->password;
              $userName =  $row->username;
+              $email =  $row->email;
              }
              if ($password == $passWord && $username == $userName) {
-               $_SESSION['username'] = $username;
+               $_SESSION['email'] = $email;
                header('location: home_page.php');
              }
    }
