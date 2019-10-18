@@ -1,7 +1,6 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/feb_pd/resource/php/class/change_password_script.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/feb_pd/resources/php/class/change_password_script.php';
 if (isset($_POST['change'])) {
-  // code...
 $changepassword = new change_password_script($_POST['confirmpass'],$_POST['newpass']);
 $changepassword ->changepassword();
 }
