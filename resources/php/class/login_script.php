@@ -23,6 +23,7 @@ class login_script extends config{
              }
              if ($password == $passWord && $username == $userName) {
                $_SESSION['email'] = $email;
+                  $_SESSION['username'] = $username;
                header('location: home_page.php');
              }
    }
