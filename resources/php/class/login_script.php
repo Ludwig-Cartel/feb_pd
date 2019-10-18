@@ -12,13 +12,13 @@ class login_script extends config{
    if (isset($_POST['username'])) {
        $username = $this->username;
        $password = $this->password;
-       $sql = "SELECT * FROM `oct_db` WHERE `userName` = ?";
+       $sql = "SELECT * FROM `feb_db` WHERE `username` = ?";
        $data=$con->prepare($sql);
        $data->execute([$username]);
        $rows =$data-> fetchAll();
            foreach ($rows as $row) {
-             $passWord =  $row->passWord;
-             $userName =  $row->userName;
+             $passWord =  $row->password;
+             $userName =  $row->username;
              }
              if ($password == $passWord && $username == $userName) {
                $_SESSION['username'] = $username;
