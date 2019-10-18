@@ -17,9 +17,7 @@ public function register(){
     $username = $this->username;
     $password = $this->password;
     $email = $this->email;
-    var_dump($con);
-    var_dump($username);
-    $sql = "INSERT INTO `oct_db`(`userName`, `passWord`, `Email`) VALUES (?,?,?)";
+    $sql = "INSERT INTO `feb_db`(`username`, `password`, `email`) VALUES (?,?,?)";
     $data = $con->prepare($sql);
     $data->execute([$username,$password,$email]);
 
