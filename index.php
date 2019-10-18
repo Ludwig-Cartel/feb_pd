@@ -32,10 +32,10 @@ $login -> login();
                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
                      <ul class="navbar-nav mr-auto">
                      </ul>
-                     <ul class="navbar-nav ml-auto">
-                     <li class="nav-item">
-                     <a class="nav-link" href="register_page.php">Register</a>
-                     </li>
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="register_page.php">Register</a>
+                        </li>
                      </ul>
                  </div>
              </div>
@@ -57,26 +57,27 @@ $login -> login();
                          <input type="hidden" name="_token" value="2mLzO2ucQRQP8O28PNFpJTRKNCttlQB5Tifs9ZXp">
                          <!-- Username -->
                          <div class="form-group row">
-                         <label for="email" class="col-md-4 col-form-label text-md-right">Username</label>
-                         <div class="col-md-6">
-                         <input id="username" type="username" class="form-control " name="username" value="" required autocomplete="email" autofocus>
-                         </div>
+                           <label for="email" class="col-md-4 col-form-label text-md-right">Username</label>
+                           <div class="col-md-6">
+                             <input id="username" type="username" class="form-control " name="username" value="" required autocomplete="email" autofocus>
+                           </div>
                          </div>
                          <!-- Password -->
-                         <div class="form-group row">
-                         <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
-                         <div class="col-md-6">
-                         <input id="password" type="password" class="form-control " name="password" required autocomplete="current-password">
-                         </div>
-                         </div>
+                          <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                            <div class="col-md-6">
+                              <input id="password" type="password" class="form-control " name="password" required autocomplete="current-password">
+                            </div>
+                          </div>
 
                         <div class="form-group row">
-                        <div class="col-md-6 offset-md-4">
+                          <div class="col-md-6 offset-md-4">
+                          </div>
                         </div>
-                        </div>
+
                          <div class="form-group row mb-0">
                              <div class="col-md-8 offset-md-4">
-                                 <button type="submit" class="btn btn-primary">
+                                 <button type="submit" name="login" class="btn btn-primary">
                                      Login
                                  </button>
                              </div>
