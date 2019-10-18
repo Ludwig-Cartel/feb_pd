@@ -5,6 +5,7 @@ $register = new register_script($_POST['username'],$_POST['password'],$_POST['em
 $register -> register();
 }
 ?>
+
 <!DOCTYPE htmml>
 <html lang="en">
 <head>
@@ -40,7 +41,7 @@ $register -> register();
             <div class="card">
                 <div class="card-header">Register</div>
                 <div class="card-body">
-                    <form action="register.php" method="post" >
+                    <form action="" method="post" >
                         <div class="form-group row">
                             <label for="username" class="col-md-4 col-form-label text-md-right">Username</label>
                             <div class="col-md-6">
@@ -59,11 +60,9 @@ $register -> register();
                                 <input type="text" class="form-control " name="email" required autocomplete="new-password">
                            </div>
                         </div>
-
-
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                              <button type="submit" name="submit" class="btn btn-success">
+                              <button type="submit" name="register" class="btn btn-success">
                                   Register
                               </button>
                             </div>
