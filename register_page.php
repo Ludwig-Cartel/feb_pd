@@ -49,7 +49,7 @@ $register -> register();
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">Last Name</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
                             <div class="col-md-6">
                                 <input type="password" class="form-control " name="password" value="" required autocomplete="email">
                             </div>
