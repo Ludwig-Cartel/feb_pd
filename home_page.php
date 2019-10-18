@@ -1,3 +1,10 @@
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'].'/oct_pd/resource/php/class/logout.php';
+if (isset($_POST['logout'])) {
+$logout = new logout();
+$logout -> logouts();
+}
+ ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,11 +19,22 @@
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <div class="title m-b-md">
-                    Welcome
+                    Welcome<?php session_start();
+                  $uname = $_SESSION['username'];
+                    if(isset($uname)){echo $uname;}else{
+                        header('location: index.php');
+                    } ?>
                 </div>
                 <div class="links">
                   <a href="change_password_page.php">Change Password</a>
+<<<<<<< HEAD
                   <a href="">LogOut</a>
+=======
+                  <form action="" method="post">
+                  <input type="submit" name="logout" value="logout">
+                </form>
+
+>>>>>>> 8377f318d993e2959fdb76bcf994ac878c121014
               </div>
             </div>
         </div>
