@@ -12,7 +12,7 @@ class change_password_script extends config{
         $con = $config->Connect();
         $uname = $_SESSION['username'];
         $confirmpass =$this->confirmpass;
-        $sql = "SELECT * FROM `feb_db` WHERE `username` = '$uname'  ";
+        $sql = "SELECT * FROM `feb_pd` WHERE `username` = '$uname'  ";
         $data=$con->prepare($sql);
         $data->execute();
         $rows =$data-> fetchAll();
@@ -21,9 +21,14 @@ class change_password_script extends config{
           }
           if ($confirmpass == $password) {
             $newpass = $this->newpass;
-            $sql = "UPDATE `feb_db` SET `password`='$newpass' WHERE `username` = '$uname' ";
+            if ($confirmpass != $newpass) {
+            $sql = "UPDATE `oct_db` SET `passWord`='$newpass' WHERE `userName` = '$uname' ";
             $data=$con->prepare($sql);
             $data->execute();
+          }else {
+            $message = "new password must be different";
+            echo "<script type='text/javascript'>alert('$message');</script>";
+          }
     }
   }
 }

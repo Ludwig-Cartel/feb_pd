@@ -12,7 +12,7 @@ class login_script extends config{
    if (isset($_POST['username'])) {
        $username = $this->username;
        $password = $this->password;
-       $sql = "SELECT * FROM `feb_db` WHERE `username` = ?";
+       $sql = "SELECT * FROM `feb_pd` WHERE `username` = ?";
        $data=$con->prepare($sql);
        $data->execute([$username]);
        $rows =$data-> fetchAll();
