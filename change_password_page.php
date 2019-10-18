@@ -1,3 +1,12 @@
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'].'/oct_pd/resource/php/class/change_password_script.php';
+if (isset($_POST['change'])) {
+  // code...
+$changepassword = new change_password_script($_POST['confirmpass'],$_POST['newpass']);
+$changepassword ->changepassword();
+}
+
+ ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
