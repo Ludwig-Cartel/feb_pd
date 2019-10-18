@@ -25,16 +25,16 @@ $changepassword ->changepassword();
         	<input type="hidden" name="_token" value="DckCorowTc7XSm9rN42jc9hwR0cFbFewUPxAjOah">
 
             <div class="form-group row">
-             <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+             <label for="password" class="col-md-4 col-form-label text-md-right">Confirm Password</label>
               <div class="col-md-7">
-                <input id="password" type="password" class="form-control " name="newpass" required autocomplete="new-password">
+                <input id="password" type="password" class="form-control " name="confirmpass" required autocomplete="new-password">
               </div>
             </div>
 
             <div class="form-group row">
-              <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Confirm Password</label>
+              <label for="password-confirm" class="col-md-4 col-form-label text-md-right">New Password</label>
                 <div class="col-md-7">
-                  <input id="password-confirm" type="password" class="form-control" name="confirmpass" required autocomplete="new-password">
+                  <input id="password-confirm" type="password" class="form-control" name="newpass" required autocomplete="new-password">
                 </div>
               </div>
 

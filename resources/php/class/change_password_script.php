@@ -17,12 +17,13 @@ class change_password_script extends config{
         $data->execute();
         $rows =$data-> fetchAll();
         foreach ($rows as $row) {
-          $password =  $row->passWord;
+          $password =  $row->password;
           }
+          var_dump($confirmpass);
           if ($confirmpass == $password) {
             $newpass = $this->newpass;
             if ($confirmpass != $newpass) {
-            $sql = "UPDATE `oct_db` SET `passWord`='$newpass' WHERE `userName` = '$uname' ";
+            $sql = "UPDATE `feb_pd` SET `password`='$newpass' WHERE `username` = '$uname' ";
             $data=$con->prepare($sql);
             $data->execute();
           }else {
