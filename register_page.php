@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/oct_pd/resource/php/class/register_script.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/feb_pd/resource/php/class/register_script.php';
 if (isset($_POST['register'])) {
 $register = new register_script($_POST['username'],$_POST['password'],$_POST['email']);
 $register -> register();

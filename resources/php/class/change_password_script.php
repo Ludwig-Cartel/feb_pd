@@ -1,7 +1,7 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'].'/feb_pd/resources/php/db/config.php';
 session_start();
-class changepassword extends config{
+class change_password_script extends config{
   public function __construct($confirmpass=null,$newpass=null){
     $this->confirmpass = $confirmpass;
     $this->newpass = $newpass;
