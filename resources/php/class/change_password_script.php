@@ -12,7 +12,7 @@ class change_password_script extends config{
         $con = $config->Connect();
         $uname = $_SESSION['username'];
         $confirmpass =$this->confirmpass;
-        $sql = "SELECT * FROM `oct_db` WHERE `userName` = '$uname'  ";
+        $sql = "SELECT * FROM `feb_db` WHERE `username` = '$uname'  ";
         $data=$con->prepare($sql);
         $data->execute();
         $rows =$data-> fetchAll();
@@ -21,7 +21,7 @@ class change_password_script extends config{
           }
           if ($confirmpass == $password) {
             $newpass = $this->newpass;
-            $sql = "UPDATE `oct_db` SET `passWord`='$newpass' WHERE `userName` = '$uname' ";
+            $sql = "UPDATE `feb_db` SET `password`='$newpass' WHERE `username` = '$uname' ";
             $data=$con->prepare($sql);
             $data->execute();
     }
