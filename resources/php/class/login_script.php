@@ -20,7 +20,7 @@ class login_script extends config{
              $passWord =  $row->password;
              $userName =  $row->username;
              }
-             if ($password == $password && $username == $username) {
+             if ($password == $passWord && $username == $userName) {
                $_SESSION['username'] = $username;
                header('location: home_page.php');
              }
